@@ -2,7 +2,7 @@ version: '3.9'
 services:
   mysql:
     image: mysql:latest
-    restart: always
+    restart: no
     environment:
       MYSQL_ROOT_PASSWORD: wordpress
       MYSQL_DATABASE: gamestore
@@ -15,7 +15,7 @@ services:
 
   wordpress:
     image: wordpress:latest
-    restart: always
+    restart: no
     environment:
       WORDPRESS_DB_HOST: mysql:3306
       WORDPRESS_DB_USER: wordpress
