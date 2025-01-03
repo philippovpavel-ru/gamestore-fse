@@ -1,0 +1,7 @@
+/.srv/*
+!/.srv/custom.ini
+/themes/twenty*
+/plugins/*
+!/plugins/phpavel*
+!/plugins/snd*
+!/plugins/index.php
